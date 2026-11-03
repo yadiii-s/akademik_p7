@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f9;
+    color: #222;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+nav {
+    background: #1f4e79;
+    padding: 12px 20px;
+}
+nav a {
+    color: #cfe0f1;
+    text-decoration: none;
+    margin-right: 18px;
+}
+nav a.aktif {
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+footer {
+    text-align: center;
+    color: #777;
+    padding: 20px;
+    font-size: 13px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+th {
+    background: #1f4e79;
+    color: #fff;
+    text-align: left;
+}
+th,
+td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #dde3ea;
+}
+tr.gagal td {
+    background: #fdecea;
+}
+.alert {
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin: 14px 0;
+}
+.alert-info {
+    background: #e3f0fb;
+    color: #1f4e79;
+}
+.alert-sukses {
+    background: #e6f4ea;
+    color: #1e6b32;
+}
+.alert-bahaya {
+    background: #fdecea;
+    color: #b3261e;
+}
+.kartu {
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px 20px;
+    flex: 1;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+.kartu h3 {
+    margin: 0 0 6px;
+    font-size: 14px;
+    color: #666;
+}
+.kartu .isi {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1f4e79;
+}
+.baris {
+    display: flex;
+    gap: 16px;
+    margin: 16px 0;
+}
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    background: #dde3ea;
+}
+.badge-biru {
+    background: #cfe0f1;
+    color: #1f4e79;
+}
+.badge-hijau {
+    background: #d7efdc;
+    color: #1e6b32;
+}
+
+.badge-oranye {
+    background: #fde3cf;
+    color: #9a4a00;
+}
+
+.badge-merah {
+    background: #f8d7da;
+    color: #b3261e;
+}
+.badge-kuning {
+    background: #fff3cd;
+    color: #8a6d00;
+}
+.cari {
+    display: flex;
+    gap: 8px;
+    margin: 14px 0;
+}
+.cari input,
+.cari select {
+    padding: 6px 10px;
+    border: 1px solid #b8c4d2;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.cari button {
+    padding: 6px 14px;
+    border: 0;
+    border-radius: 6px;
+    background: #1f4e79;
+    color: #fff;
+    cursor: pointer;
+}
+.cari a {
+    align-self: center;
+    font-size: 14px;
+}
+table a {
+    color: #1f4e79;
+}
+dl {
+    background: #fff;
+    border-radius: 8px;
+    padding: 12px 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+dt {
+    color: #666;
+    font-size: 13px;
+    margin-top: 8px;
+}
+dd {
+    margin: 2px 0 8px;
+    font-size: 17px;
+}
+
+.container nav {
+    background: none;
+    padding: 0;
+}
+.pagination {
+    list-style: none;
+    display: flex;
+    gap: 6px;
+    padding: 0;
+    margin: 16px 0;
+}
+.pagination li a,
+.pagination li span {
+    display: block;
+    margin: 0;
+    padding: 6px 12px;
+    border: 1px solid #b8c4d2;
+    border-radius: 6px;
+    background: #fff;
+    color: #1f4e79;
+    text-decoration: none;
+    font-size: 14px;
+}
+.pagination li.active span {
+    background: #1f4e79;
+    color: #fff;
+    border-color: #1f4e79;
+}
+.pagination li.disabled span {
+    color: #aaa;
+}
+.sebaran td {
+    border-bottom: 0;
+}
+.batang {
+    height: 16px;
+    background: #1f4e79;
+    border-radius: 3px;
+}
+tfoot th {
+    background: #eef2f6;
+    color: #222;
+}
+
+.formulir label {
+    display: block;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 4px;
+}
+.formulir input,
+.formulir select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #b8c4d2;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.formulir input.salah,
+.formulir select.salah {
+    border-color: #b3261e;
+    background: #fdf3f2;
+}
+.formulir button {
+    padding: 8px 18px;
+    border: 0;
+    border-radius: 6px;
+    background: #1f4e79;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.galat {
+    display: block;
+    color: #b3261e;
+    margin-top: 4px;
+}
+.aksi {
+    white-space: nowrap;
+}
+.aksi form {
+    display: inline;
+    margin-left: 8px;
+}
+.aksi .hapus {
+    padding: 2px 10px;
+    border: 1px solid #b3261e;
+    border-radius: 6px;
+    background: #fff;
+    color: #b3261e;
+    font-size: 13px;
+    cursor: pointer;
+}
